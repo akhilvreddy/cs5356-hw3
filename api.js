@@ -1,6 +1,6 @@
 async function fetchNextMCUMovie() {
     try {
-        const response = await fetch('ttps://www.whenisthenextmcufilm.com/api');
+        const response = await fetch('https://www.whenisthenextmcufilm.com/api');
         
         if (!response.ok) {
             throw new Error('HTTP Error! Status: ${response.status}');
