@@ -1,9 +1,11 @@
 async function fetchNextMCUMovie() {
+    console.log("fetchNextMCUMovie() called"); // <-- Add this
+
     try {
         const response = await fetch('https://www.whenisthenextmcufilm.com/api');
-        
+
         if (!response.ok) {
-            throw new Error('HTTP Error! Status: ${response.status}');
+            throw new Error(`HTTP Error! Status: ${response.status}`);
         }
 
         const data = await response.json();
@@ -17,6 +19,5 @@ async function fetchNextMCUMovie() {
         console.error('Error fetching next MCU movie', error);
     }
 }
-
 
 document.addEventListener("DOMContentLoaded", fetchNextMCUMovie);
