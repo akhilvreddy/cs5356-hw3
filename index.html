@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="""UTF-8
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .profile-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 450px;
-            width: 100%;
-        }
-        .profile-container img {
-            border-radius: 50%;
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-        }
-        .profile-container h1 {
-            margin: 10px 0;
-            font-size: 24px;
-        }
-        .profile-container p {
-            margin: 5px 0;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="profile-container">
-        <img src="assets/images/profile_pic.jpg" alt="Profile Picture">
-        <h1>Costco Guys</h1>
-        <p><strong>Education:</strong> B.Sc. in Food Science</p>
-        <p><strong>Profile:</strong> Social Media influencer with 400K followers.</p>
-        <p>We make memes on the internet and then they go viral. We are famous from being from Jersey and loving Costco.</p>
-    </div>
+    <section class="profile-container">
+        <header>
+            <h1>Costco Guys</h1>
+        </header>
+        <figure>
+            <img src="assets/images/profile_pic.jpg" alt="Profile Picture">
+            <figcaption>Social Media Influencer</figcaption>
+        </figure>
+        <section>
+            <p><strong>Education:</strong> B.Sc. in Food Science</p>
+            <p><strong>Profile:</strong> Social Media influencer with 400K followers.</p>
+            <p>We make memes on the internet and then they go viral. We are famous for being from Jersey and loving Costco.</p>
+        </section>
+
+        <section>
+            <h3>Costco Locations in New Jersey</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Opening Year</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1991</td>
+                        <td>205 Vineyard Road, Edison, NJ 08817</td>
+                    </tr>
+                    <tr>
+                        <td>1993</td>
+                        <td>315 State Route 15 N, Wharton, NJ 07885</td>
+                    </tr>
+                    <tr>
+                        <td>1995</td>
+                        <td>2361 Highway 66, Ocean Township, NJ 07712</td>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>6295 Commerce Blvd, Hamilton Township, NJ 08691</td>
+                    </tr>
+                    <tr>
+                        <td>1999</td>
+                        <td>18 Route 9, Morganville, NJ 07751</td>
+                    </tr>
+                    <tr>
+                        <td>2001</td>
+                        <td>1055 Hudson Street, Jersey City, NJ 07302</td>
+                    </tr>
+                    <tr>
+                        <td>2003</td>
+                        <td>2361 Highway 66, Ocean Township, NJ 07712</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>125 Beacon Hill Road, Newark, NJ 07104</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>205 Vine Street, Teterboro, NJ 07608</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>100 Centerton Road, Mount Laurel, NJ 08054</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </section>
+
+    </section>
 </body>
 </html>
